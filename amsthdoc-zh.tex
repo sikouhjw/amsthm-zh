@@ -72,8 +72,7 @@
 
 \chardef\bslchar=`\\ % p. 424, TeXbook
 \newcommand{\ntt}{%
-  \fontfamily\ttdefault \fontseries\mddefault \fontshape\updefault
-  \selectfont
+  \ttfamily\mdseries\upshape%
 }
 \DeclareRobustCommand{\cn}[1]{{\ntt\bslchar#1}}
 \DeclareRobustCommand{\cls}[1]{{\ntt#1}}
@@ -116,7 +115,7 @@
 
 \begin{document}
 \maketitle
-\markboth{使用 \pkg{amsthm} 宏包}{使用 \pkg{amsthm} 宏包}
+\markboth{使用~\pkg{amsthm} 宏包}{使用~\pkg{amsthm} 宏包}
 
 \begingroup
 \small
