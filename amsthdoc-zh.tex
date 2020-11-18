@@ -30,18 +30,9 @@
 %%
 %% ====================================================================
 %%
-\documentclass[11pt,twoside]{article}
+\documentclass[11pt,twoside,fontset=sikou,punct=kaiming]{ctexart}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{sourceserifpro,sourcesanspro,sourcecodepro}
-\usepackage[fontset=none,punct=kaiming]{ctex}
-\setCJKmainfont{Source Han Serif SC}[
-  UprightFont    = *-Regular,
-  BoldFont       = *-Bold,
-  ItalicFont     = 方正楷体_GBK,
-  BoldItalicFont = *-Bold,
-  Mapping        = fullwidth-stop
-]
-\setCJKmonofont{Source Han Sans SC}
 \usepackage[letterpaper,width=46\ccwd,vmargin=2cm]{geometry}
 \renewcommand{\emph}[1]{\textbf{#1}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -109,7 +100,7 @@
 \setcounter{tocdepth}{2}
 
 \usepackage{url}
-\usepackage[breaklinks]{hyperref}
+\usepackage[breaklinks,hidelinks]{hyperref}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
